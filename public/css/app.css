@@ -1,0 +1,82 @@
+body {
+    background-color: #262A56;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    background-color: #262A56;
+}
+
+h1, h2 , h3 {
+    color: #30385e;
+}
+
+p, label, button, select, option {
+    color: #363b3f;
+}
+
+input[type="email"] {
+    background-color: #f5e8e8;
+}
+
+button:hover {
+    color: white;
+    background-color: #3333b9;
+}
+
+.header-wrapper {
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+}
+
+.main-wrapper {
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    width: 60%;
+}
+
+.main-wrapper .page-label {
+    text-align: center;
+    font-size: x-large;
+}
+
+.footer-wrapper {
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    padding: 20px;
+    width: 60%;
+}
+
+.planet-details-wrapper a:hover {
+    color: #3333b9;
+}
+
+.planet-detail-wrapper {
+    display: flex;
+    align-items: center;
+
+    .planet-page {
+        width: 200px;
+        text-align: center;
+    }
+
+    .img-frame {
+        height: 100px;
+        background-color: #453C67;
+    }
+}
+
+.form-practice {
+    border: double #143544;
+}
+
+#comment {
+    background-color: #f1efef;
+}
