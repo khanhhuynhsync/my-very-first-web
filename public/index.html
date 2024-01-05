@@ -5,19 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
         <link rel="stylesheet" href="css/app.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <title>Galaxy</title>
     </head>
     <body>
         <header class="header-wrapper">
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                </ul>
-            </nav>
-            <hr>
-        </header>
-        <main class="main-wrapper">
             <section class="page-label">
                 <h1>Solar System Exploration
                     <sup>
@@ -25,8 +19,15 @@
                     </sup>
                 </h1>
             </section>
-            <hr>
-            <section>
+            <nav>
+                <div class="header-nav-menu">
+                    <div class="header-nav-menu-item">Home</div>
+                    <div class="header-nav-menu-item">About</div>
+                </div>
+            </nav>
+        </header>
+        <main class="main-wrapper">
+            <section class="overview-wrapper">
                 <h2>Solar System Overview</h2>
                 <p>The solar system has one star, eight planets, five officially recognized dwarf planets, at least 290
                     moons,
@@ -56,91 +57,87 @@
                 <h2>Solar System Detail</h2>
                 <article>
                     <h3>8 Planets</h3>
-                    <ol>
-                        <li>
-                            <div class="planet-detail-wrapper">
-                                <a class="planet-page" href="pages/planets/mercury.html">Mercury</a>
-                                <img class="img-frame" src="images/planets/mercury.jpg" alt="Mercury">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="planet-detail-wrapper">
-                                <a class="planet-page" href="pages/planets/venus.html">Venus</a>
-                                <img class="img-frame" src="images/planets/venus.jpg" alt="Venus">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="planet-detail-wrapper">
-                                <a class="planet-page" href="pages/planets/earth.html">Earth</a>
-                                <img class="img-frame" src="images/planets/earth.jpg" alt="Earth">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="planet-detail-wrapper">
-                                <a class="planet-page" href="pages/planets/mars.html">Mars</a>
-                                <img class="img-frame" src="images/planets/mars.jpg" alt="Mars">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="planet-detail-wrapper">
-                                <a class="planet-page" href="pages/planets/jupiter.html">Jupiter</a>
-                                <img class="img-frame" src="images/planets/jupiter.jpg" alt="Jupiter">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="planet-detail-wrapper">
-                                <a class="planet-page" href="pages/planets/saturn.html">Saturn</a>
-                                <img class="img-frame" src="images/planets/saturn.jpg" alt="Saturn">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="planet-detail-wrapper">
-                                <a class="planet-page" href="pages/planets/uranus.html">Uranus</a>
-                                <img class="img-frame" src="images/planets/uranus.jpg" alt="Uranus">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="planet-detail-wrapper">
-                                <a class="planet-page" href="pages/planets/neptune.html">Neptune</a>
-                                <img class="img-frame" src="images/planets/neptune.jpg" alt="Neptune">
-                            </div>
-                        </li>
-                    </ol>
+                    <div class="planet-detail-wrapper">
+                        <a class="planet-page" href="pages/planets/mercury.html">Mercury</a>
+                        <div class="img-wrapper">
+                            <img class="img-frame" src="images/planets/mercury.jpg" alt="Mercury">
+                        </div>
+                    </div>
+                    <div class="planet-detail-wrapper">
+                        <a class="planet-page" href="pages/planets/venus.html">Venus</a>
+                        <div class="img-wrapper">
+                            <img class="img-frame" src="images/planets/venus.jpg" alt="Venus">
+                        </div>
+                    </div>
+                    <div class="planet-detail-wrapper">
+                        <a class="planet-page" href="pages/planets/earth.html">Earth</a>
+                        <div class="img-wrapper">
+                            <img class="img-frame" src="images/planets/earth.jpg" alt="Earth">
+                        </div>
+                    </div>
+                    <div class="planet-detail-wrapper">
+                        <a class="planet-page" href="pages/planets/mars.html">Mars</a>
+                        <div class="img-wrapper">
+                            <img class="img-frame" src="images/planets/mars.jpg" alt="Mars">
+                        </div>
+                    </div>
+                    <div class="planet-detail-wrapper">
+                        <a class="planet-page" href="pages/planets/jupiter.html">Jupiter</a>
+                        <div class="img-wrapper">
+                            <img class="img-frame" src="images/planets/jupiter.jpg" alt="Jupiter">
+                        </div>
+                    </div>
+                    <div class="planet-detail-wrapper">
+                        <a class="planet-page" href="pages/planets/saturn.html">Saturn</a>
+                        <div class="img-wrapper">
+                            <img class="img-frame" src="images/planets/saturn.jpg" alt="Saturn">
+                        </div>
+                    </div>
+                    <div class="planet-detail-wrapper">
+                        <a class="planet-page" href="pages/planets/uranus.html">Uranus</a>
+                        <div class="img-wrapper">
+                            <img class="img-frame" src="images/planets/uranus.jpg" alt="Uranus">
+                        </div>
+                    </div>
+                    <div class="planet-detail-wrapper">
+                        <a class="planet-page" href="pages/planets/neptune.html">Neptune</a>
+                        <div class="img-wrapper">
+                            <img class="img-frame" src="images/planets/neptune.jpg" alt="Neptune">
+                        </div>
+                    </div>
                 </article>
                 <article>
                     <h3>5 Dwarf Planets</h3>
-                    <ol>
-                        <li>
-                            <div class="planet-detail-wrapper">
-                                <a class="planet-page" href="pages/dwarf-planets/pluto.html">Pluto</a>
-                                <img class="img-frame" src="images/dwarf-planets/pluto.jpg" alt="Pluto">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="planet-detail-wrapper">
-                                <a class="planet-page" href="pages/dwarf-planets/ceres.html">Ceres</a>
-                                <img class="img-frame" src="images/dwarf-planets/ceres.jpg" alt="Ceres">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="planet-detail-wrapper">
-                                <a class="planet-page" href="pages/dwarf-planets/makemake.html">Makemake</a>
-                                <img class="img-frame" src="images/dwarf-planets/makemake.jpg" alt="Makemake">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="planet-detail-wrapper">
-                                <a class="planet-page" href="pages/dwarf-planets/haumea.html">Haumea</a>
-                                <img class="img-frame" src="images/dwarf-planets/haumea.jpg" alt="Haumea">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="planet-detail-wrapper">
-                                <a class="planet-page" href="pages/dwarf-planets/eris.html">Eris</a>
-                                <img class="img-frame" src="images/dwarf-planets/eris.jpg" alt="Eris">
-                            </div>
-                        </li>
-                    </ol>
+                    <div class="planet-detail-wrapper">
+                        <a class="planet-page" href="pages/dwarf-planets/pluto.html">Pluto</a>
+                        <div class="img-wrapper">
+                            <img class="img-frame" src="images/dwarf-planets/pluto.jpg" alt="Pluto">
+                        </div>
+                    </div>
+                    <div class="planet-detail-wrapper">
+                        <a class="planet-page" href="pages/dwarf-planets/ceres.html">Ceres</a>
+                        <div class="img-wrapper">
+                            <img class="img-frame" src="images/dwarf-planets/ceres.jpg" alt="Ceres">
+                        </div>
+                    </div>
+                    <div class="planet-detail-wrapper">
+                        <a class="planet-page" href="pages/dwarf-planets/makemake.html">Makemake</a>
+                        <div class="img-wrapper">
+                            <img class="img-frame" src="images/dwarf-planets/makemake.jpg" alt="Makemake">
+                        </div>
+                    </div>
+                    <div class="planet-detail-wrapper">
+                        <a class="planet-page" href="pages/dwarf-planets/haumea.html">Haumea</a>
+                        <div class="img-wrapper">
+                            <img class="img-frame" src="images/dwarf-planets/haumea.jpg" alt="Haumea">
+                        </div>
+                    </div>
+                    <div class="planet-detail-wrapper">
+                        <a class="planet-page" href="pages/dwarf-planets/eris.html">Eris</a>
+                        <div class="img-wrapper">
+                            <img class="img-frame" src="images/dwarf-planets/eris.jpg" alt="Eris">
+                        </div>
+                    </div>
                 </article>
             </section>
             <hr>
@@ -213,7 +210,7 @@
                     <div>
                         <label for="comment">Your comment:</label>
                         <br>
-                        <textarea id="comment" name="comment" rows="5" cols="50" placeholder="your comment"></textarea>
+                        <textarea id="comment" name="comment" rows="5" placeholder="your comment"></textarea>
                     </div>
                     <button>Send comment</button>
                 </form>
