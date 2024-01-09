@@ -3,11 +3,6 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
     background-image: url("../../public/images/background.jpg");
     background-size: cover;
 }
@@ -32,14 +27,15 @@ button:hover {
 
 /**********************************************************************************/
 .header-wrapper {
-    background-color: #F5F5F5;
-    margin: 0 auto;
-    padding: 10px;
-    width: 100%;
-    position: sticky;
     display: flex;
     align-items: center;
+    position: sticky;
     top: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+    z-index: 2;
+    background-color: #F5F5F5;
 }
 
 .header-nav-menu {
@@ -60,20 +56,16 @@ button:hover {
 }
 
 .page-label {
-    padding-left: 10px;
-    padding-right: 10px;
     text-align: center;
     font-size: large;
 }
 
 /**********************************************************************************/
 .main-wrapper {
-    background-color: #F5F5F5;
-    margin: 0 auto 0;
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    padding: 20px;
+    background-color: #F5F5F5;
 }
 
 .planet-detail-wrapper {
@@ -142,10 +134,10 @@ input[type="email"] {
 
 /**********************************************************************************/
 .footer-wrapper {
-    background-color: #F5F5F5;
-    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 20px;
-    width: 50%;
+    background-color: #F5F5F5;
 }
 
 /**********************************************************************************/
