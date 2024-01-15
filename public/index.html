@@ -21,10 +21,11 @@
                 </h1>
             </section>
             <nav>
-                <div class="header-nav-menu">
+                <div id="headerNavMenu" class="header-nav-menu">
                     <div class="header-nav-menu-item">Home</div>
                     <div class="header-nav-menu-item">Contact</div>
                     <div class="header-nav-menu-item">About</div>
+                    <div id="funBtn" class="header-nav-menu-item">Fun!!!</div>
                 </div>
             </nav>
         </header>
@@ -173,12 +174,12 @@
                 </table>
                 <hr>
                 <h2>Form Practice</h2>
-                <form action="https://www.google.com/search">
+                <form id="searchGoogle" action="https://www.google.com/search">
                     <label for="planetNameToSearchGoogle">Search by Google:</label>
                     <input type="text" id="planetNameToSearchGoogle" name="q" placeholder="planet name">
                     <button>Search</button>
                 </form>
-                <form action="/planet">
+                <form id="searchOnPage" action="/planet">
                     <label for="planetNameToSearch">Search in this site:</label>
                     <input type="text" id="planetNameToSearch" name="planetName" placeholder="planet name">
                     <button>Search</button>

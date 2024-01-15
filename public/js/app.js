@@ -66,3 +66,34 @@ console.log(imageQuery.classList);
 
 const textTypes = document.querySelectorAll("[type=text]");
 console.log(textTypes);
+
+// Some event practices
+const searchOnPageForm = document.querySelector("#searchOnPage");
+searchOnPageForm.addEventListener('submit', function(e) {
+   e.preventDefault();
+   alert("HAHA No result found!!!")
+   this.reset();
+});
+
+const headerNavMenu = document.querySelector("#headerNavMenu");
+const funBtn = document.querySelector("#funBtn");
+headerNavMenu.addEventListener('click', function() {
+    alert("navigation bar clicked!!!!");
+});
+funBtn.addEventListener('click', function (e) {
+    alert("fun button clicked!!!!");
+    e.stopPropagation();
+});
+
+// async await
+async function fetchImg(name, url) {
+    const img = await fetch(url);
+    if (!img.ok) {
+        throw new Error(`HTTP error! status: ${img.status}`);
+    }
+    return [name, img];
+}
+fetchImg("earth", "")
+.then(([name, url]) => {
+    console.log(name, url);
+});
