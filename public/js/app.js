@@ -87,7 +87,7 @@ funBtn.addEventListener('click', function (e) {
 
 // async await
 async function fetchImg(name, url) {
-    const img = await fetch(url);
+    const img = await fetch(url); //wait for fetch img
     if (!img.ok) {
         throw new Error(`HTTP error! status: ${img.status}`);
     }
@@ -97,3 +97,22 @@ fetchImg("earth", "")
 .then(([name, url]) => {
     console.log(name, url);
 });
+
+// APIs
+function fetchPeople(url) {
+    const req = new XMLHttpRequest();
+    req.open("GET", url);
+    req.send();
+    req.onloadend = function () {
+        console.log("People: ", req.response);
+    }
+}
+fetchPeople("https://swapi.dev/api/people/1");
+
+fetch("https://swapi.dev/api/people/1")
+    .then(res => {
+        return res.json();
+    })
+    .then(data => {
+        console.log("People 2: ", data);
+    })
