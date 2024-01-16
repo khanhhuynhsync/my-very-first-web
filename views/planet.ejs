@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('head') %>
+    <body class="container-md">
+        <%- include('nav-bar') %>
+        This is <%= planetName %>
+        <% if(planetName === 'pluto') { %>
+            and it is a dwarf planet
+        <% } %>
+    </body>
+</html>

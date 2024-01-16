@@ -14,7 +14,7 @@ const planet = {
 console.log("Planet: ", planet);
 
 // Object array
-const planets = planetNames.map(name => {
+const planetArray = planetNames.map(name => {
     return {
         name: name,
         size: Math.floor(Math.random() * 100 + 1),
@@ -22,7 +22,7 @@ const planets = planetNames.map(name => {
         imgURL: `images/planets/${name.toLowerCase()}.jpg`
     }
 });
-console.log("Planets: ", planets);
+console.log("Planets: ", planetArray);
 
 // Some function practices
 function printPlanetNames(input) {
@@ -38,7 +38,7 @@ const planetsWithSize = function (input) {
         }
     })
 };
-console.log("Planets with size planetsWithSize: ", planetsWithSize(planets));
+console.log("Planets with size planetsWithSize: ", planetsWithSize(planetArray));
 
 const planetsWithSizeArrowFunc = (input) => input.map(planet => {
     return {
@@ -46,10 +46,10 @@ const planetsWithSizeArrowFunc = (input) => input.map(planet => {
         size: planet.size
     }
 });
-console.log("Planets with size planetsWithSizeArrowFunc: ", planetsWithSizeArrowFunc(planets));
+console.log("Planets with size planetsWithSizeArrowFunc: ", planetsWithSizeArrowFunc(planetArray));
 
 const planetsUnder50 = (input) => input.filter(planet => (planet.size < 50));
-console.log("Planets under 50 planetsUnder50: ", planetsUnder50(planets));
+console.log("Planets under 50 planetsUnder50: ", planetsUnder50(planetArray));
 
 // Some get element practices
 const planetMercury = document.getElementById("planet-mercury-img");
@@ -75,15 +75,15 @@ searchOnPageForm.addEventListener('submit', function(e) {
    this.reset();
 });
 
-const headerNavMenu = document.querySelector("#headerNavMenu");
-const funBtn = document.querySelector("#funBtn");
-headerNavMenu.addEventListener('click', function() {
-    alert("navigation bar clicked!!!!");
-});
-funBtn.addEventListener('click', function (e) {
-    alert("fun button clicked!!!!");
-    e.stopPropagation();
-});
+// const headerNavMenu = document.querySelector("#headerNavMenu");
+// const funBtn = document.querySelector("#funBtn");
+// headerNavMenu.addEventListener('click', function() {
+//     alert("navigation bar clicked!!!!");
+// });
+// funBtn.addEventListener('click', function (e) {
+//     alert("fun button clicked!!!!");
+//     e.stopPropagation();
+// });
 
 // async await
 async function fetchImg(name, url) {
