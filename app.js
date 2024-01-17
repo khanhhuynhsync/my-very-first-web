@@ -7,11 +7,13 @@ const notfound = require(`./routes/notfound`)
 // START Setting express
 const express = require('express')
 const app = express()
+const compression = require('compression')
 const path = require('path')
 const port = 8080
 app.set('view engine', 'ejs') // Use ejs with option view engine
 app.set('views', path.join(__dirname, '/views')) // Set dynamic path for views folder
 app.use(express.static(path.join(__dirname, 'public'))) // Serving static public folder
+app.use(compression());
 app.listen(port, () => {
   console.log(`Running on port ${port}`)
 })
