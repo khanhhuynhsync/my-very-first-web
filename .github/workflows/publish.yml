@@ -111,7 +111,7 @@ jobs:
         uses: Azure/k8s-set-context@v3.0
         with:
           method: service-account
-          k8s-url: https://huynhkhanh.com:9999
+          k8s-url: https://103.82.38.248:9999
           k8s-secret: ${{ secrets.K8S_SECRET }}
 
       - name: Checkout source code
