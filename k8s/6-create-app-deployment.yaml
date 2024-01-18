@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hdk-web
+  namespace: hdk-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hdk-web
+  template:
+    metadata:
+      labels:
+        app: hdk-web
+    spec:
+      containers:
+        - name: hdk-web-container
+          image: ghcr.io/khanhhuynhsync/my-very-first-web:latest
+          imagePullPolicy: Always
+      imagePullSecrets:
+        - name: ghcr-token-prod
