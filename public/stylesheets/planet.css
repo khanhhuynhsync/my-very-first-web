@@ -1,0 +1,52 @@
+.planet-detail-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    background-color: #262A56;
+}
+
+.planet-detail-wrapper a {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+.planet-detail-wrapper:hover {
+    background-color: #AFD3E2;
+    box-shadow: -10px 0 10px #47B5FF;
+    transition: 0.3s;
+}
+
+.planet-detail-wrapper:hover a {
+    color: #262A56;
+}
+
+.planet-detail-link {
+    width: 200px;
+    text-align: center;
+}
+
+.planet-detail-wrapper:hover .planet-detail-link {
+    font-weight: bold;
+}
+
+.planet-img-wrapper {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.planet-img-wrapper:hover {
+    overflow: unset;
+    z-index: 1;
+}
+
+.planet-img-frame {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    transition: max-height 1s;
+}
+
+.planet-img-frame:hover {
+    max-height: 1000px;
+}

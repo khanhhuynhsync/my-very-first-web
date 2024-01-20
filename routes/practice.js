@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-    res.render('not-found', {headTitle: '404 NOT FOUND'})
+    res.render(`practice`, {headTitle: 'practice'})
 })
 
 module.exports = router
