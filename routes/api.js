@@ -1,10 +1,10 @@
 const express = require('express')
 const {v4: uuid} = require("uuid");
 const bcrypt = require('bcrypt')
-const {authentication} = require("../middlewares/middleware");
+const middlewares = require("../middlewares/middleware");
 const router = express.Router()
 
-router.get('/', authentication, async (req, res) => {
+router.get('/', middlewares.authentication, async (req, res) => {
     const {name, country, userName} = req.session
     res.send(`${userName} login successfully, Hi ${name} from ${country}`)
 })
