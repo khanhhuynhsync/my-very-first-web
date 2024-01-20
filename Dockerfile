@@ -6,6 +6,7 @@ RUN chown 1001 /work \
 RUN mkdir logs \
     && chmod "g+rwX" logs \
     && chown 1001:root logs
+COPY --chown=1001:root middlewares /work/middlewares
 COPY --chown=1001:root public /work/public
 COPY --chown=1001:root routes /work/routes
 COPY --chown=1001:root views /work/views
