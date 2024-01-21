@@ -4,4 +4,5 @@
 @import url(footer.css);
 
 @import url(home.css);
-@import url(planet.css);
+@import url(planet-banner.css);
+@import url(planet-detail.css);

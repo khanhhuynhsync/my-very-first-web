@@ -1,5 +1,5 @@
 const homeRoutes = require(`./routes/home`)
-const planetRoutes = require(`./routes/planet`)
+const planetDetailRoutes = require(`./routes/planet-detail`)
 const notfoundRoutes = require(`./routes/notfound`)
 const practiceRoutes = require(`./routes/practice`)
 const apiRoutes = require(`./routes/api`)
@@ -24,6 +24,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     cookie: {
+        secure: true,
         expires: 60000 // Expire cookie after 60s
     }
 }))
@@ -39,6 +40,6 @@ app.use(middlewares.second)
 app.use('/', homeRoutes)
 app.use('/api', apiRoutes)
 app.use('/practice', practiceRoutes)
-app.use(`/planets`, planetRoutes)
+app.use(`/planets`, planetDetailRoutes)
 app.use('*', notfoundRoutes) // This pattern * should in the last
 // END Routing

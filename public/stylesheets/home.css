@@ -13,6 +13,10 @@
     background-color: #F5F5F5;
 }
 
+.planet-details-wrapper > article {
+    margin-top: 20px;
+}
+
 .sidebar-wrapper {
     position: sticky;
     top: 100px;
@@ -20,7 +24,7 @@
     align-items: center;
     flex-direction: column;
     height: fit-content;
-    padding: 20px;
+    padding: 10px;
     background-color: #F5F5F5;
 }
 
@@ -57,9 +61,13 @@
     }
     .sidebar-wrapper {
         position: unset;
+        justify-content: space-around;
         width: 100%;
         align-self: flex-start;
         flex-direction: row;
+    }
+    .author-img-frame {
+        width: 100px;
     }
 
 }
