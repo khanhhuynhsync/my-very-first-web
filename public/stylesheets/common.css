@@ -1,0 +1,23 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+hr {
+    width: 100%;
+    background-color: #262A56;
+}
+
+h1, h2 , h3 {
+    color: #262A56;
+}
+
+p, label, button, select, option {
+    color: #262A56;
+}

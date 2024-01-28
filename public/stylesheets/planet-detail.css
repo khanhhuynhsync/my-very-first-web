@@ -1,0 +1,21 @@
+.planet-info {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+    background-image: unset;
+}
+
+.planet-info > h1 {
+    color: #F5F5F5;
+}
+
+.planet-detail-info {
+    padding: 20px;
+}
+
+.planet-detail-info > img {
+    width: 100%;
+}
