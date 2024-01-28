@@ -9,12 +9,18 @@
 .header-wrapper {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
 }
 
 .header-site-name {
     text-align: center;
-    font-size: large;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.header-site-name p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .header-nav-menu {
